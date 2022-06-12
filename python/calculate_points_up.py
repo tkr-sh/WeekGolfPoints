@@ -9,7 +9,7 @@ def calculate_points(total, before_bytes_nb, new_bytes_nb):
 
     diff = before_bytes_nb - new_bytes_nb
 
-    score = log(min(diff, 100) + 10, 5) * 1000 * log(1 + total/150)
+    score = log(min(diff, 100) + 10, 5) * 1200 * log(1 + total/100)
 
     return score
 
