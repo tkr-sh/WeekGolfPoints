@@ -15,7 +15,7 @@ float calculate_points(total, before_bytes_nb, new_bytes_nb){
 
     diff = before_bytes_nb - new_bytes_nb;
 
-    score = log5((diff>100?100:diff) + 10) * 1000 * log( 1 + (float)total / 150);
+    score = log5((diff>100?100:diff) + 10) * 1200 * log( 1 + (float)total / 100);
 
 
     return score;
