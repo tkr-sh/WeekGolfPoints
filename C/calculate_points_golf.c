@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 
-float min(float a,float b){
+float min(float a, float b){
     return a>b?b:a;
 }
 
-float max(float a,float b){
+float max(float a, float b){
     return a>b?a:b;
 }
 
@@ -17,7 +17,7 @@ float calculate_points(rank, same_rank_nb, total){
 
     
     if (rank == 1)
-        multiplier = min( max( exp( ( total / same_rank_nb ) / 70 ) / 6 + 0.8 , 1 ) , 3);
+        multiplier = min ( max ( exp ( ( total / same_rank_nb ) / 70 ) / 6 + 0.8 , 1 ) , 3);
         // same_rank < 1% => mutltiplier: 3
         // same_rank > 10% => mutltiplier: 1
 
